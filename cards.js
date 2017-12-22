@@ -11,7 +11,7 @@ createButton.addEventListener("click", () => {
 
 function createCard() {
     // create the elments
-    let input = textArea.value;
+    let input = textArea.value
     let newCard = document.createElement("div");
     let newCardText = document.createElement("p");
     let deleteButton = document.createElement("button");
@@ -23,9 +23,10 @@ function createCard() {
     deleteButton.innerHTML = "delete";
 
     // add to DOM
-    newCard.appendChild(newCard);
-    deleteButton.appendChild(deleteButton);
-    newCardText.appendChild(newCardText);
+    newTextArea.appendChild(newCard);
+    console.log(newCard)
+    deleteButton.appendChild(newTextArea);
+    newCardText.appendChild(newTextArea);
     newCard.appendChild(deleteButton);
 }
 
