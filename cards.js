@@ -6,6 +6,7 @@ let newTextArea = document.getElementById("newTextArea");
 createButton.addEventListener("click", () => {
     createCard();
     textArea.value = "";
+    
 });
 
 function createCard() {
