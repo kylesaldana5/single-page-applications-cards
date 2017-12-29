@@ -13,6 +13,12 @@ function createCard() {
     // create the elments
     let input = textArea.value
     let newCard = document.createElement("div");
+    newCard.id = "divBox";
+    newCard.innerHTML = "made div";
+    newCard.style.height = "50px";
+    newCard.style.width = "200px";
+    newCard.style.backgroundColor = "blue";
+    document.body.appendChild(newCard);
     let newCardText = document.createElement("p");
     let deleteButton = document.createElement("button");
 
@@ -21,9 +27,10 @@ function createCard() {
     deleteButton.id = "delte-button";
     newCardText.classList.add("newCardText");
     deleteButton.innerHTML = "delete";
+    
 
     // add to DOM
-    newTextArea.appendChild(newCard);
+    newTextArea.appendChild(newText);
     console.log(newCard)
     deleteButton.appendChild(newTextArea);
     newCardText.appendChild(newTextArea);
